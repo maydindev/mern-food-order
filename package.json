@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next-auth": "^4.24.0",
     "@reduxjs/toolkit": "^1.8.5",
     "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
