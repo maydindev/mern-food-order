@@ -50,5 +50,8 @@
   "bugs": {
     "url": "https://github.com/eminbasbayan/food-ordering-udemy/issues"
   },
-  "homepage": "https://github.com/eminbasbayan/food-ordering-udemy#readme"
+  "homepage": "https://github.com/eminbasbayan/food-ordering-udemy#readme",
+  "engines": {
+  "node": "16.13.0"
+}
 }
