@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "next-auth": "^4.24.0",
-    "@next-auth/mongodb-adapter": "^0.2.1",
+    "@auth/mongodb-adapter": "^0.3.1"
     "@reduxjs/toolkit": "^1.8.5",
     "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
