@@ -53,6 +53,6 @@
   },
   "homepage": "https://github.com/eminbasbayan/food-ordering-udemy#readme",
   "engines": {
-  "node": "16.13.0"
+  "node": "18.x"
 }
 }
