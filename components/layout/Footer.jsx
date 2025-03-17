@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Title from "../ui/Title";
 
+/*fixed bottom-0 left-0 w-full z-0*/
+
 const Footer = () => {
   const [footer, setFooter] = useState([]);
 
@@ -20,7 +22,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="bg-secondary text-white fixed bottom-0 left-0 w-full z-0">
+    <div className="bg-secondary text-white">
       <div className="container mx-auto pt-16 pb-6">
         <div className="flex md:justify-between justify-center text-center flex-wrap md:gap-y-0 gap-y-6 ">
           <div className="md:flex-1">
