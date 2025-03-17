@@ -95,9 +95,9 @@ const Profile = () => {
       {tabs === 1 && <Order />}
       {tabs === 2 && <Category />}
       {tabs === 3 && <Footer />}
-      <div className="z-10">{isProductModal && <AddProduct setIsProductModal={setIsProductModal} />}</div>
+      {isProductModal && <AddProduct setIsProductModal={setIsProductModal} />}
       <button
-        className="btn-primary !w-12 !h-12 !p-0 absolute bottom-14 right-10 text-4xl"
+        className="btn-primary !w-12 !h-12 !p-0 absolute bottom-14 right-10 text-4xl z-10"
         onClick={() => setIsProductModal(true)}
       >
         +
