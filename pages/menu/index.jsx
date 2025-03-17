@@ -2,11 +2,9 @@ import axios from "axios";
 import React from "react";
 import MenuWrapper from "../../components/product/MenuWrapper";
 
-// <div className="pt-10">
-
 const Index = ({ categoryList, productList }) => {
   return (
-    <div className="pt-10 min-h-screen">
+    <div className="pt-10">
       <MenuWrapper categoryList={categoryList} productList={productList} />
     </div>
   );
