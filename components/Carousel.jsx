@@ -29,10 +29,15 @@ const Carousel = () => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
+
+    // İlk yüklemede doğru başlangıç değeri almak için
+    setWindowWidth(window.innerWidth);
+
     window.addEventListener("resize", handleResize);
-    handleResize(); // İlk yüklemede genişliği almak için
+
+    // Temizleme işlemi
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, []); // Boş bağımlılık dizisi ile sadece bir kez çalışır
 
 
   
