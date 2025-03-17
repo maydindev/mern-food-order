@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import Title from "./ui/Title";
 import Slider from "react-slick";
