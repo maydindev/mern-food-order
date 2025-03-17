@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Title from "./ui/Title";
 import Slider from "react-slick";
@@ -24,9 +23,9 @@ const Carousel = () => {
     ),
   };
 
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = React.useState(0);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
