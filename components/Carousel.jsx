@@ -27,7 +27,6 @@ const Carousel = () => {
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="relative h-full w-full">
             <Image
-              key={windowWidth} // Yeniden render tetiklemesi için
               src="/images/hero-bg.jpg"
               alt=""
               layout="fill"
