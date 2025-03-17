@@ -6,7 +6,7 @@ import MenuWrapper from "../../components/product/MenuWrapper";
 
 const Index = ({ categoryList, productList }) => {
   return (
-    <div>
+    <div className="pt-10 min-h-screen">
       <MenuWrapper categoryList={categoryList} productList={productList} />
     </div>
   );
