@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Reservation />
-    </React.Fragment>
+    </div>
   );
 };
 
