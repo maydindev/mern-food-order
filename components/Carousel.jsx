@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Title from "./ui/Title";
 import Slider from "react-slick";
@@ -22,25 +21,6 @@ const Carousel = () => {
       <div className="w-3 h-3 border bg-white rounded-full mt-10"></div>
     ),
   };
-
-  const [windowWidth, setWindowWidth] = React.useState(0);
-
-  React.useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    // İlk yüklemede doğru başlangıç değeri almak için
-    setWindowWidth(window.innerWidth);
-
-    window.addEventListener("resize", handleResize);
-
-    // Temizleme işlemi
-    return () => window.removeEventListener("resize", handleResize);
-  }, []); // Boş bağımlılık dizisi ile sadece bir kez çalışır
-
-
-  
 
   return (
     <div className="h-screen w-full -mt-[88px]">
