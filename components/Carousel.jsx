@@ -22,21 +22,34 @@ const Carousel = () => {
     ),
   };
 
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize(); // İlk yüklemede genişliği almak için
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
+  
+
   return (
     <div className="h-screen w-full -mt-[88px]">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="relative h-full w-full">
-          
-          <div className="absolute top-0 left-0 w-screen min-h-screen">
-  <Image
-    src="/images/hero-bg.jpg"
-    alt=""
-    layout="fill"
-    objectFit="cover"
-    priority
-    quality={100}
-  />
-</div>
+            <Image
+              key={windowWidth} // Yeniden render tetiklemesi için
+              src="/images/hero-bg.jpg"
+              alt=""
+              layout="fill"
+              objectFit="cover"
+              priority
+              quality={100}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+            />
         </div>
       </div>
       <Slider {...settings}>
