@@ -65,7 +65,8 @@ const AddProduct = ({ setIsProductModal }) => {
 
     try {
       const uploadRes = await axios.post(
-        "https://api.cloudinary.com/v1_1/bilgisayar-genetigi/image/upload",
+        /*"https://api.cloudinary.com/v1_1/bilgisayar-genetigi/image/upload"*/
+        "https://unsplash.com/photos/a-bowl-of-white-rice-on-a-yellow-background-uZ3XaE_uKbQ",
         data
       );
 
