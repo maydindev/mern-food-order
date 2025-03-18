@@ -45,13 +45,13 @@
   "main": "next.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eminbasbayan/food-ordering-udemy.git"
+    "url": "git+https://github.com/maydindev/mern-food-order.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eminbasbayan/food-ordering-udemy/issues"
+    "url": "https://github.com/maydindev/mern-food-order/issues"
   },
-  "homepage": "https://github.com/eminbasbayan/food-ordering-udemy#readme"
+  "homepage": "https://github.com/maydindev/mern-food-order#readme"
 }
