@@ -54,7 +54,12 @@ const Carousel = () => {
             <Image
               src="/images/hero-bg.jpg"
               alt="Hero Background"
-              layout="fill"
+              
+              width={1920}  // Genişlik açıkça belirtiliyor
+              height={1080}  // Yükseklik açıkça belirtiliyor
+              className="w-full h-full object-cover"
+              priority
+              quality={100}
             />
            </div>
         </div>  
