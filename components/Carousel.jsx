@@ -49,8 +49,8 @@ const Carousel = () => {
 
   return (
     <div className="min-h-screen w-full">
-      <div className="absolute top-0 left-0 w-full h-full">
-       <div className="relative h-full w-full">
+      <div className="absolute top-0 left-0 w-full">
+       <div className="relative w-full">
             <Image
               src="/images/hero-bg.jpg"
               alt="Hero Background"
