@@ -21,19 +21,20 @@ const Carousel = () => {
       <div className="w-3 h-3 border bg-white rounded-full mt-10"></div>
     ),
   };
-// relative
+
   return (
     <div className="h-screen w-full -mt-[88px]">
       <div className="absolute top-0 left-0 w-full h-full">
-        <div className=" h-full w-full">
+        <div className="relative h-full w-full">
             <Image
               src="/images/hero-bg.jpg"
-              alt=""
+              alt="Hero Background"
               layout="fill"
               objectFit="cover"
+              objectPosition="center center"
               priority
               quality={100}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+              sizes="100vw"
             />
         </div>
       </div>
