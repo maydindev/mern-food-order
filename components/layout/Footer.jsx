@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-center mt-10">
-          © 2022 All Rights Reserved
+          © 2025 All Rights Reserved
         </p>
       </div>
     </div>
