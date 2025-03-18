@@ -36,9 +36,8 @@ const Carousel = () => {
             <Image
   */
 
-  return (
-    <div className="min-h-screen w-full">
-     <div className="absolute top-0 left-0 w-full h-full">
+  /*
+  <div className="absolute top-0 left-0 w-full h-full">
        <div className="relative h-full w-full">
             <Image
               src="/images/hero-bg.jpg"
@@ -46,6 +45,13 @@ const Carousel = () => {
               layout="fill"
             />
            </div>
+  */
+
+  return (
+    <div className="min-h-screen w-full">
+     <div className="absolute top-0 left-0 w-full min-h-screen bg-cover bg-center" 
+     style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
+
         </div>  
       <Slider {...settings}>
         <div>
