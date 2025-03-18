@@ -51,15 +51,13 @@ const Carousel = () => {
     <div className="relative min-h-screen w-full">
       <div className="absolute top-0 left-0 w-full h-full">
        
+           <div className="relative h-full w-full">
             <Image
               src="/images/hero-bg.jpg"
               alt="Hero Background"
               layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-              priority
-              quality={100}
             />
+           </div>
           
         </div>  
       <Slider {...settings}>
