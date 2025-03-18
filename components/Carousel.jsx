@@ -48,19 +48,23 @@ const Carousel = () => {
   */
 
   return (
-    <div className="min-h-screen w-full">
-      <div className="absolute top-0 left-0 w-full">
+    <div className="relative min-h-screen w-full">
+      <div className="absolute top-0 left-0 w-full h-full">
        <div className="relative w-full">
             <Image
               src="/images/hero-bg.jpg"
               alt="Hero Background"
               layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              priority
+              quality={100}
             />
            </div>
         </div>  
       <Slider {...settings}>
         <div>
-          <div className="mt-48 container mx-auto  text-white flex flex-col items-start gap-y-8">
+          <div className="relative z-10 mt-48 container mx-auto  text-white flex flex-col items-start gap-y-8">
             <Title addClass="text-5xl">Fast Food Restaurant</Title>
             <p className="text-sm sm:w-2/5 w-full">
               Doloremque, itaque aperiam facilis rerum, commodi, temporibus
@@ -72,7 +76,7 @@ const Carousel = () => {
           </div>
         </div>
         <div>
-          <div className="mt-48 container mx-auto  text-white flex flex-col items-start gap-y-8">
+          <div className="relative z-10 mt-48 container mx-auto  text-white flex flex-col items-start gap-y-8">
             <Title addClass="text-5xl">Fast Food Restaurant</Title>
             <p className="text-sm sm:w-2/5 w-full">
               Doloremque, itaque aperiam facilis rerum, commodi, temporibus
