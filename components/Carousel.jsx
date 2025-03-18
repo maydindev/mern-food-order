@@ -22,22 +22,26 @@ const Carousel = () => {
     ),
   };
   // <div className="h-screen w-full -mt-[88px]">
-  // <div className="absolute top-0 left-0 w-full h-full">
-        // <div className="relative h-full w-full">
-  return (
-    <div className="h-screen w-full">
-     
-            <Image
-              src="/images/hero-bg.jpg"
-              alt="Hero Background"
-              layout="fill"
-              objectFit="cover"
+  /*
+  objectFit="cover"
               objectPosition="top center"
               priority
               quality={100}
               sizes="100vw"
+              */
+
+  return (
+    <div className="h-screen w-full">
+     <div className="absolute top-0 left-0 w-full h-full">
+       <div className="relative h-full w-full">
+            <Image
+              src="/images/hero-bg.jpg"
+              alt="Hero Background"
+              layout="fill"
+              
             />
-        
+           </div>
+        </div>  
       <Slider {...settings}>
         <div>
           <div className="mt-48 container mx-auto  text-white flex flex-col items-start gap-y-8">
