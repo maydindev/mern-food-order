@@ -31,7 +31,7 @@ const Carousel = () => {
               alt="Hero Background"
               layout="fill"
               objectFit="cover"
-              objectPosition="center center"
+              objectPosition="top center"
               priority
               quality={100}
               sizes="100vw"
