@@ -29,16 +29,19 @@ const Carousel = () => {
               quality={100}
               sizes="100vw"
               */
+  /*
+  <div className="relative h-full w-full">
+            <Image
+  */
 
   return (
     <div className="h-screen w-full">
      <div className="absolute top-0 left-0 w-full h-full">
-       <div className="relative h-full w-full">
+       <div className="relative min-h-screen w-full">
             <Image
               src="/images/hero-bg.jpg"
               alt="Hero Background"
               layout="fill"
-              
             />
            </div>
         </div>  
