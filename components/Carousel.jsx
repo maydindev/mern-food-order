@@ -22,10 +22,11 @@ const Carousel = () => {
     ),
   };
   // <div className="h-screen w-full -mt-[88px]">
+  // <div className="absolute top-0 left-0 w-full h-full">
+        // <div className="relative h-full w-full">
   return (
     <div className="h-screen w-full">
-      <div className="absolute top-0 left-0 w-full h-full">
-        <div className="relative h-full w-full">
+     
             <Image
               src="/images/hero-bg.jpg"
               alt="Hero Background"
@@ -36,8 +37,7 @@ const Carousel = () => {
               quality={100}
               sizes="100vw"
             />
-        </div>
-      </div>
+        
       <Slider {...settings}>
         <div>
           <div className="mt-48 container mx-auto  text-white flex flex-col items-start gap-y-8">
